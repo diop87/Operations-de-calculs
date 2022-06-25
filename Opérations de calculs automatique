@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="logo 2.jpg">
+    <title>Opérations</title>
+</head>
+<body>
+    <form method="post" action="traitement.php">
+   
+             <p>
+                <label for="number">Saissir la quantité</label>
+                <input type="number" id="qt" value="" />
+             </p>
+
+
+             <p>
+                  <label for="number">Taper le prix unitaire :</label>
+                  <input type="number" id="pu" value="" />
+             </p>
+    
+        <p>
+            <input name="Button" type="button" id="button" onClick="mt.value=qt.value*pu.value;rd.value=mt.value*8/100;nap.value=mt.value-rd.value" value="Calculer" />
+            <input type="reset" id="button" value="Autre calcul" />
+
+        </p>
+        <p>
+            <label for="number">Montant hors taxe :</label>
+            <input type="number" id="mt" value="" />
+       </p>
+       <p>
+        <label for="number">Réduction :</label>
+        <input type="number" id="rd" value="" />
+   </p>
+   <p>
+    <label for="number">Net à payer :</label>
+    <input type="number" id="nap" value="" />
+</p>
+<input type="button" name="button1" id="button1" onclick="document.bgColor='green'" value="Vert">
+<input type="button" name="button2" id="button2" onclick="document.bgColor='yellow'" value="Jaune">
+<input type="button" name="button3" id="button3" onclick="document.bgColor='red'" value="Rouge">
+<input type="button" name="button4" id="button4" onclick="document.bgColor='blue'" value="Bleu">
+<input type="button" name="button5" id="button5" onclick="document.bgColor='orange'" value="Orange">
+
+
+    
+    </form>
+</body>
+</html>
